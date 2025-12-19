@@ -83,3 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 });
+
+const pohonLayer = document.getElementById('pohon-layer');
+
+// Generate 20 pohon secara otomatis
+for (let i = 0; i < 20; i++) {
+  const pohon = document.createElement('div');
+  pohon.className = 'pohon';
+  // Variasi tinggi pohon sedikit
+  const scale = 0.5 + Math.random();
+  pohon.style.transform = `scale(${scale})`;
+  pohonLayer.appendChild(pohon);
+}
