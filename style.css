@@ -187,3 +187,157 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ============================================================
+   RESPONSIVE SETTINGS (Mobile & Tablet)
+   ============================================================ */
+
+/* Untuk Tablet & Layar Kecil (Max 1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 40px;
+        padding: 0 5%;
+    }
+    
+    .my-name {
+        font-size: 2.5rem;
+    }
+}
+
+/* Untuk HP (Max 768px) */
+@media (max-width: 768px) {
+    /* LinkedIn ditaruh di atas nama biar gak nabrak */
+    .linkedin-fixed {
+        position: relative; /* Gak melayang lagi di HP biar rapi */
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    header {
+        padding: 40px 20px;
+    }
+
+    .my-name {
+        font-size: 1.8rem; /* Nama mengecil di HP */
+        letter-spacing: 3px;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Menu bakal turun kalau gak muat */
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    /* Home Section jadi tumpuk atas bawah */
+    .hero-content {
+        flex-direction: column; /* Foto di atas, teks di bawah */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-img img {
+        width: 250px; /* Foto mengecil di HP */
+    }
+
+    /* Section padding dikurangin biar gak terlalu banyak ruang kosong */
+    .content-section {
+        padding: 60px 8%;
+    }
+
+    .section-title h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-minimal {
+        padding-left: 20px;
+    }
+}
+
+/* Untuk HP Sangat Kecil (Max 480px) */
+@media (max-width: 480px) {
+    .my-name {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+}
+
+/* Styling Hamburger Menu */
+.hamburger {
+    display: none; /* Sembunyi di Desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+/* Responsive Mobile (Max 768px) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Muncul di HP */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Sembunyi di luar layar kanan */
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(234, 224, 207);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    nav.active {
+        right: 0; /* Geser masuk ke layar */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* Animasi Hamburger jadi X */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
