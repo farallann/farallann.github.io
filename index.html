@@ -1,359 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/Glasses.png" type="image/x-icon">
-    <title>farallann</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Faral</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#achievement">Achievement</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <img src="" id="icon">
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Faral</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#achievement" onclick="toggleMenu()">achievement</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/Hello Memoji.png" alt="Faral In Memoji " />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I am</p>
-        <h1 class="title">Faral</h1>
-        <p class="section__text__p2"></p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2" onclick="window.open('./assets/ATS-Resume.pdf')"
-          >
-            CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact 
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https:/linkedin.com/in/faral-lanindi-00b5421a7/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Little things about me</p>
-      <h1 class="title">:D</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Memoji Laptop.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2 years <br />Customer Support</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Vocational High School<br />In major of Online Business & Marketing</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I have an experience in customer service with 2 year of experience. 
-              Have expertise in handling customer complaints, building and maintaining 
-              relationships with customers, and being able to increase customer satisfaction. 
-              I have good communication skills, and can adapt to new environments. 
-              As well, have made a deals with a several B2B, such a Trans7 (@fyp_trans7, @sport7trans7, @officialmotogpt7), Ministry of Religion of Indonesia in purpose of biometrics for Hajj, Snack Video, and Mineski (Gaming Cafe)
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-      <section id="achievement">
-        <section id="about">
-          <p class="section__text__p1"></p>
-          <h1 class="title">Achievements :D</h1>
-          <div class="section-container">
-            <div class="section__pics-container">
-              <img
-                src="./assets/Ideas memoji.png"
-                alt="Profile picture"
-                class="about-pic"
-                <div class="text-container">
-                  <p>
-                    Get the highest deals up to 40 Million Rupiah, and become the best employee within 2 months after joined Byebeli
-                  </p>
-                </div>
-              </div>
-            </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Final Version</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      </section>
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Few of my</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Customer Support</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Communication</h3>
-                  <p>Great</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Multitasking</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Problem Solving</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Product Knowledge</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Indonesia</h3>
-                  <p>Great</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>English</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Word</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Excel</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Power Point</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Google Sheets</h3>
-                  <p>Good</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Recents Company i worked on :D</p>
-      <h1 class="title">Company</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Logo Coway 1080.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Coway</h2>
-            <div class="btn-container">
+    <a href="https://www.linkedin.com/in/faral-lanindi-00b5421a7/" target="_blank" class="linkedin-fixed">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
+    <header>
+        <div class="header-container">
+            <h1 class="my-name">Faral</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#career" class="nav-link">Career</a></li>
+                    <li><a href="#achievement" class="nav-link">Achievement</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section id="home" class="hero section-reveal">
+            <div class="hero-content">
+                <div class="hero-img">
+                    <img src="assets/Hello Memoji.png" alt="Profile PNG">
+                </div>
+                <div class="hero-text">
+                    <h2>Halo :D</h2>
+                    <p>I am Customer Service Specialist with proven experience in managing both B2C and B2B clients in the gadget rental industry.</p>
+                    <a href="assets/ATS Faral Lanindi English.pdf" class="btn-minimal" download>
+                        <i class="fa-solid fa-file-invoice"></i> CV
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Byebeli logo.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Byebeli</h2>
-            <div class="btn-container">
-  
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Faral Memoji.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Soon</h2>
-            <div class="btn-container">
+        </section>
 
+        <section id="career" class="content-section section-reveal">
+            <div class="section-title">
+        <i class="fa-solid fa-minus"></i>
+        <h2>CAREER</h2>
+    </div>
+
+    <div class="card-minimal">
+        <h3>Customer Excellence Officer</h3>
+        <p class="subtitle">Byebeli Gadget | Jan 2023 - Present </p>
+        <p>Customer Service Officer with experience in managing digital customer service across multiple platforms with Omnichannel through WhatsApp, Instagram, Facebook Messenger, and TikTok with achieving and maintaining a 90%+ customer satisfaction rate.</p>
+    </div>
+
+    <div class="card-minimal">
+        <h3>E-commerce Admin</h3>
+        <p class="subtitle">fins_mart | Aug 2022 - Sep 2023</p>
+        <p>Manage and operate fins_mart, a family-owned online store on Shopee.</p>
+    </div>
+
+    <div class="card-minimal">
+        <h3>Merchandiser (Internship) </h3>
+        <p class="subtitle">Ramayana | Des 2020 - Jan 2021</p>
+        <p>Maintained clothing displays and store organization and monitored stock levels and recorded sales data.</p>
+    </div>
+</section>
+
+        <section id="achievement" class="content-section section-reveal">
+            <div class="section-title">
+                <i class="fa-solid fa-minus"></i>
+                <h2>Achievement</h2>
             </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">You can</p>
-      <h1 class="title">Find me on</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:farallanindi13@gmail.com">Email</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/faral-lanindi-00b5421a7/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+            <div class="card-minimal">
+                <h3>Best Employee</h3>
+                <p class="subtitle">Byebeli Gadget | Mar 2023</p>
+                <p>Get the highest deals up to 40 Million Rupiah, and become the best employee within 2 months after joined Byebeli :D</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-center section-reveal">
+            <div class="section-title center">
+                <h2>Contact</h2>
+            </div>
+            <p>you can contact me thru</p>
+            <a href="mailto:farallanindi13@gmail.com" class="btn-minimal">
+                <i class="fa-solid fa-envelope"></i> email :D
+            </a>
+        </section>
+    </main>
+
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievement">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+        <p>&copy; 2025 FL. Jakarta.</p>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
